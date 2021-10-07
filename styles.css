@@ -20,9 +20,9 @@ body {
 
 :root {
     --primary: #ffffff;
-    --secondary: #8ed5de;
-    --tertiary: #8ed5de;
-    --accent: #157a92;
+    --secondary: #dec58e;
+    --tertiary: #eeaf67;
+    --accent: #beaca1;
     --text: #000000;
     --opacity: .5;
     --scale: 1;
@@ -53,7 +53,7 @@ body {
     width: 100vw;
     padding: 0 0 3% 0;
     height: auto;
-    background-color: #157992a4;
+    background-color: var(--tertiary);
 
 }
 
@@ -88,7 +88,7 @@ a.nav-list-link::after {
     position: absolute;
     width: 110%;
     height: 40%;
-    background: #cdda1481;
+    background: var(--accent);
     bottom: 0;
     left: 0;
     transform:  scale(0, .5);
