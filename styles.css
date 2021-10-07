@@ -15,6 +15,7 @@ html {
 body {
     background-color: var(--primary);
     display: block;
+    font-family: 'Open Sans',sans-serif;
 
 }
 
@@ -32,45 +33,29 @@ body {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/*testing colors*/
+/*Color Palette*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.colors{
-    --primary: #FF8966;
-    --secondary: #48A9A6;
-    --tertiary: #F5F0F6;
-    --accent: #0B1D51;
-    --purp:#336699;
-    --text: #000000;
-    --opacity: .7;
-    --scale: 1;
-    --scale-two: 1;
-    --gradiant-one: rgba(21, 122, 146, 1);
-    --gradiant-two: rgba(142, 213, 222, .1);
-}
+
 
 /* ~~~~~~~~~~~~~~~~~~~ */
 /*  Dark Mode Colors   */
-/* 
-:root {
-    --primary: #F5F0F6;
-    --secondary: #dec58e;
-    --tertiary: #8F754F;
-    --accent: #2B4162;
-    --text: #000000;
-    --opacity: .5;
-    --scale: 1;
-    --scale-two: 1;
-    --gradiant-one: rgba(21, 122, 146, 1);
-    --gradiant-two: rgba(142, 213, 222, .1);
-}
-~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+
+
+
 
 /* ~~~~~~~~~~~~~~~~~~~ */
 /*       Header        */
 /* ~~~~~~~~~~~~~~~~~~~ */
 
 .header-main-container {
-    margin: auto;
+    
 
 }
 
@@ -80,7 +65,7 @@ body {
     height: 100px;
     flex-direction: row;
     width: 100vw;
-    padding: 0 0 3% 0;
+    padding: 0 0 3% 0; /*  remember top right bottom left */
     height: auto;
     background-color: var(--tertiary);
 
@@ -139,3 +124,82 @@ a.nav-list-link:focus::after {
     
     
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*           Hero section     
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .profile-wrapper{
+        width: 50%;
+        height:95%;
+        display:flex;
+       padding-left:8%;
+      
+    }
+    .hero-wrapper{
+        background:var(--secondary);
+        padding: 5% 0 0 0;
+        
+        height: 100vh;
+        
+    }
+    .hero-text{
+        float: left;
+        width: 50%;
+        padding:10%;
+       
+    }
+    
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*           Profile Card            */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.profile-card{
+    position: relative;
+    display:inline-flex;
+    min-width: 250px;
+    height:600px;
+   
+
+}
+.profile-card-image{
+    opacity: 0.3;
+}
+.card-head{
+    position: absolute;
+    top:50%;
+    left:70%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height:400px
+}
+.card-head-img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+.hover-content{
+    visibility: unset;
+    position:absolute;
+    inset: 0;
+    background: var(--text);
+    color:white;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    padding:2%;
+    text-align: center;
+    opacity: 0;
+
+}
+.card-head:hover .hover-content{
+    opacity: .8;
+}
+.card-head:focus .hover-content{
+    opacity: .8;
+}
+
