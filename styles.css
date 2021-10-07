@@ -100,7 +100,7 @@ a.nav-list-link::after {
 
 a.nav-list-link:hover::after {
     transform: scale(1, 1);
-    transition-delay: .2s;
+    
     
     
 }
