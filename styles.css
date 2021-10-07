@@ -19,12 +19,29 @@ body {
 }
 
 :root {
-    --primary: #ffffff;
+    --primary: #F5F0F6;
     --secondary: #dec58e;
-    --tertiary: #eeaf67;
-    --accent: #beaca1;
+    --tertiary: #FF8966;
+    --accent: #183aa0;
     --text: #000000;
-    --opacity: .5;
+    --opacity: .7;
+    --scale: 1;
+    --scale-two: 1;
+    --gradiant-one: rgba(21, 122, 146, 1);
+    --gradiant-two: rgba(142, 213, 222, .1);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*testing colors*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.colors{
+    --primary: #FF8966;
+    --secondary: #48A9A6;
+    --tertiary: #F5F0F6;
+    --accent: #0B1D51;
+    --purp:#336699;
+    --text: #000000;
+    --opacity: .7;
     --scale: 1;
     --scale-two: 1;
     --gradiant-one: rgba(21, 122, 146, 1);
@@ -33,8 +50,20 @@ body {
 
 /* ~~~~~~~~~~~~~~~~~~~ */
 /*  Dark Mode Colors   */
-/* ~~~~~~~~~~~~~~~~~~~ */
-
+/* 
+:root {
+    --primary: #F5F0F6;
+    --secondary: #dec58e;
+    --tertiary: #8F754F;
+    --accent: #2B4162;
+    --text: #000000;
+    --opacity: .5;
+    --scale: 1;
+    --scale-two: 1;
+    --gradiant-one: rgba(21, 122, 146, 1);
+    --gradiant-two: rgba(142, 213, 222, .1);
+}
+~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~ */
 /*       Header        */
@@ -66,6 +95,7 @@ body {
     padding: 8px 0;
 }
 
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* The sliding bar under the li's */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -79,28 +109,33 @@ a.nav-list-link {
     font-weight: 700;
     cursor: pointer;
     position: relative;
-    /* used with absolute for positioning underline */
+    
     z-index: 2;
 }
-
 a.nav-list-link::after {
     content: "";
     position: absolute;
     width: 110%;
-    height: 40%;
+    height: 8px;
     background: var(--accent);
     bottom: 0;
     left: 0;
     transform:  scale(0, .5);
-    transition: transform .4s ease;
-    transition-delay: .2s;
+    transition: transform .5s ease;
     z-index: -1;
+    opacity: .9;
 
 }
-
 a.nav-list-link:hover::after {
     transform: scale(1, 1);
+   
     
+    
+}
+/* The sliding bar under the li's when in focus */
+a.nav-list-link:focus::after {
+    transform: scale(1, 1);
+   
     
     
 }
