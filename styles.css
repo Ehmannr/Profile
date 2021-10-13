@@ -57,6 +57,15 @@ a,li,h6,h5,h4,h3,h2,h1,p{
     line-height: 1.55rem;
     letter-spacing: 1px;
 }
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1rem;
+}
 
 
 
@@ -68,8 +77,6 @@ a,li,h6,h5,h4,h3,h2,h1,p{
 
 
 .nav-wrapper {
-   
-
     display: flex;
     height: 100px;
     flex-direction: row;
@@ -134,12 +141,13 @@ a.nav-list-link:focus::after {
     
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*           Hero section     
+/*          Intro section     
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     
     .intro-wrapper{
-        background:var(--primary);
+        background-image: linear-gradient(
+            170deg,#87d0ac 40% ,#ac87d0);
         padding: 5% 0 0 0;
         
         height: 100vh;
@@ -216,4 +224,41 @@ a.nav-list-link:focus::after {
     opacity:var(--opacity);
 }
 
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*           Experience              */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.experience-wrapper{
+    min-height: 100vh;
+    padding :5%;
+}
+.job-etown{
+    padding: 3%;
+
+}
+.exp-place{
+    margin-bottom: .5%;
+}
+.job-title{
+    padding-left:2%;
+}
+.section-title{
+    
+    width: 20%;
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 2%;
+    
+}
+.section-title::after{
+    content: "";
+    position: absolute;
+   width: inherit;
+    height: 10px;
+    background: var(--accent);
+    bottom:-25%;
+    left: 0;
+    z-index: -1;
+    opacity: .9;
+}
 
