@@ -1,5 +1,5 @@
 :root {
-    --primary:  #ede7ee;
+    --primary:  #f1f1f1;
     --secondary: #87D0AC;
     --tertiary: #87D0AC;
     --accent: #AC87D0;
@@ -120,12 +120,10 @@ a.nav-list-link::after {
     background: var(--accent);
     bottom: -5px;
     left: 0;
-    
     transform:  scale(0, .5);
     transition: transform .5s ease;
     z-index: -1;
     opacity: .9;
-
 }
 a.nav-list-link:hover::after {
     transform: scale(1, 1);
@@ -233,8 +231,10 @@ a.nav-list-link:focus::after {
     padding :5%;
 }
 .job-etown{
+    margin-top:8%;
     padding: 3%;
-
+    width: 70%;
+    box-shadow: 5px 10px 16px var(--accent);
 }
 .exp-place{
     margin-bottom: .5%;
@@ -243,7 +243,6 @@ a.nav-list-link:focus::after {
     padding-left:2%;
 }
 .section-title{
-    
     width: 20%;
     display: block;
     font-size: 3rem;
@@ -253,12 +252,20 @@ a.nav-list-link:focus::after {
 .section-title::after{
     content: "";
     position: absolute;
-   width: inherit;
+    width: 50%;
     height: 10px;
     background: var(--accent);
     bottom:-25%;
     left: 0;
     z-index: -1;
-    opacity: .9;
+    opacity: var(--opacity);
+}
+
+.job-tutor{
+    margin-top:8%;
+    padding: 3%;
+    width: 70%;
+    box-shadow: -10px 5px 16px var(--accent);
+    float: right;
 }
 
