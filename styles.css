@@ -20,8 +20,8 @@ body {
 }
 
 :root {
-    --primary:  #e9d88e;
-    --secondary: #ede7ee;
+    --primary:  #ede7ee;
+    --secondary: #8ECDE9;
     --tertiary: #8ECDE9;
     --accent: #6B9AAF;
     --text: #000000;
@@ -59,10 +59,7 @@ body {
 /*       Header        */
 /* ~~~~~~~~~~~~~~~~~~~ */
 
-.header-main-container {
-    
 
-}
 
 .nav-wrapper {
     justify-content: space-between;
@@ -70,7 +67,7 @@ body {
     height: 100px;
     flex-direction: row;
     width: 100vw;
-    padding: 0 0 3% 0; /*  remember top right bottom left */
+    padding: 0 0 3% 5%; /*  remember top right bottom left */
     height: auto;
     background-color: var(--tertiary);
 
@@ -82,7 +79,7 @@ body {
 }
 
 .nav-list {
-    padding: 8px 0;
+    padding: 1.5% 0 0% 5%; /*  remember top right bottom left */
 }
 
 
@@ -141,7 +138,7 @@ a.nav-list-link:focus::after {
       
     }
     .hero-wrapper{
-        background:var(--secondary);
+        background:var(--primary);
         padding: 5% 0 0 0;
         
         height: 100vh;
@@ -209,3 +206,71 @@ a.nav-list-link:focus::after {
     opacity: .8;
 }
 
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*           Experience              */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.experience-main__container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--secondary);
+    position: relative;
+    z-index: 1;
+    padding: 20px 0 20px 0;
+}
+
+.experience-main__title {
+    font-size: 2.5rem;
+    color: var(--text);
+    width: 70%;
+    margin: 0 0 0 5%;
+    position: relative;
+    z-index: 1;
+    padding: 15px 0;
+}
+
+.experience-main__title::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 10px;
+    background: var(--accent);
+    bottom: 13px;
+    left: 0;
+    
+  
+    opacity: .9;
+}
+
+
+article[class^="experience"] {
+    width: 80%;
+    padding: 15px 0;
+    margin: 0 auto;
+    background-color: var(--primary);
+    padding: 5%;
+    outline: 3px solid var(--accent);
+    outline-offset: 8px;
+}
+h3[class^="experience"]{
+    color: --var(text);
+    font-size: 1.5rem;
+    margin: 1% 0;
+    font-weight: 700;
+}
+h4[class^="experience"]{
+    color: var(--text);
+    font-size: 1rem;
+    margin: 1% 0;
+    font-weight: 600;
+}
+
+p[class^="experience"] {
+    color: var(--text);
+    position: relative;
+    z-index: 1;
+    font-size: 1.25rem;
+    width: 80%;
+    margin: 1.5%;
+}
