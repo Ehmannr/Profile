@@ -241,6 +241,7 @@ a.nav-list-link:focus::after {
 }
 .job-title{
     padding-left:2%;
+    margin-bottom: 1.5%;
 }
 .section-title{
     width: 20%;
@@ -265,7 +266,16 @@ a.nav-list-link:focus::after {
     margin-top:8%;
     padding: 3%;
     width: 70%;
-    box-shadow: -10px 5px 16px var(--accent);
+    box-shadow: -10px 5px 16px var(--secondary);
     float: right;
+}
+
+.eagle-wrapper{
+    margin-top:8%;
+    margin-bottom: 5%;
+    padding: 3%;
+    width: 70%;
+    box-shadow: 5px 10px 16px var(--accent);
+    float: left;
 }
 
