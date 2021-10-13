@@ -1,29 +1,8 @@
-/* Base Styles */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    font-size: 1em;
-    overflow-x: hidden;
-}
-
-body {
-    background-color: var(--primary);
-    display: block;
-    font-family: 'Open Sans',sans-serif;
-
-}
-
 :root {
-    --primary:  #ede7ee;
-    --secondary: #8ECDE9;
-    --tertiary: #8ECDE9;
-    --accent: #6B9AAF;
+    --primary:  #f1f1f1;
+    --secondary: #87D0AC;
+    --tertiary: #87D0AC;
+    --accent: #AC87D0;
     --text: #000000;
     --opacity: .7;
     --scale: 1;
@@ -53,6 +32,42 @@ body {
 }
 
 
+/* Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 1em;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--primary);
+    display: block;
+    
+
+}
+a,li,h6,h5,h4,h3,h2,h1,p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.55rem;
+    letter-spacing: 1px;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1rem;
+}
+
+
 
 
 /* ~~~~~~~~~~~~~~~~~~~ */
@@ -62,14 +77,13 @@ body {
 
 
 .nav-wrapper {
-    justify-content: space-between;
     display: flex;
     height: 100px;
     flex-direction: row;
     width: 100vw;
-    padding: 0 0 3% 5%; /*  remember top right bottom left */
+    padding: 0 5% 2% 5%; /*  remember top right bottom left */
     height: auto;
-    background-color: var(--tertiary);
+    background-color: var(--primary);
 
 }
 
@@ -92,26 +106,24 @@ a.nav-list-link {
     color: var(--text);
     display: block;
     border: 0;
-    margin: 2% 0;
+    margin: 5% 0;
     font-weight: 700;
     cursor: pointer;
     position: relative;
-    
-    z-index: 2;
+    z-index: 1;
 }
 a.nav-list-link::after {
     content: "";
     position: absolute;
     width: 110%;
-    height: 8px;
+    height: 5px;
     background: var(--accent);
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     transform:  scale(0, .5);
     transition: transform .5s ease;
     z-index: -1;
     opacity: .9;
-
 }
 a.nav-list-link:hover::after {
     transform: scale(1, 1);
@@ -127,24 +139,19 @@ a.nav-list-link:focus::after {
     
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*           Hero section     
+/*          Intro section     
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    .profile-wrapper{
-        width: 50%;
-        height:95%;
-        display:flex;
-       padding-left:8%;
-      
-    }
-    .hero-wrapper{
-        background:var(--primary);
+    
+    .intro-wrapper{
+        background-image: linear-gradient(
+            170deg,#87d0ac 40% ,#ac87d0);
         padding: 5% 0 0 0;
         
         height: 100vh;
         
     }
-    .hero-text{
+    .intro-text{
         float: left;
         width: 50%;
         padding:10%;
@@ -156,12 +163,18 @@ a.nav-list-link:focus::after {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*           Profile Card            */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
+.profile-wrapper{
+    width: 50%;
+    height:95%;
+    display:flex;
+   padding-left:8%;
+  
+}
 .profile-card{
     position: relative;
     display:inline-flex;
-    min-width: 250px;
-    height:600px;
+    min-width: 300px;
+    height:500px;
    
 
 }
@@ -173,8 +186,10 @@ a.nav-list-link:focus::after {
     top:50%;
     left:70%;
     transform: translate(-50%, -50%);
-    width: 300px;
-    height:400px
+    width: 100%;
+    height:80%;
+    
+    cursor: pointer;
 }
 .card-head-img{
     width: 100%;
@@ -196,81 +211,71 @@ a.nav-list-link:focus::after {
     padding:2%;
     text-align: center;
     opacity: 0;
+    padding:5%;
 
 }
 .card-head:hover .hover-content{
-    opacity: .8;
+    opacity: var(--opacity);
     
 }
 .card-head:focus .hover-content{
-    opacity: .8;
+    opacity:var(--opacity);
 }
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*           Experience              */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.experience-main__container {
-    width: 100vw;
+.experience-wrapper{
     min-height: 100vh;
-    background-color: var(--secondary);
-    position: relative;
-    z-index: 1;
-    padding: 20px 0 20px 0;
+    padding :5%;
 }
-
-.experience-main__title {
-    font-size: 2.5rem;
-    color: var(--text);
+.job-etown{
+    margin-top:8%;
+    padding: 3%;
     width: 70%;
-    margin: 0 0 0 5%;
-    position: relative;
-    z-index: 1;
-    padding: 15px 0;
+    box-shadow: 5px 10px 16px var(--accent);
 }
-
-.experience-main__title::after{
+.exp-place{
+    margin-bottom: .5%;
+}
+.job-title{
+    padding-left:2%;
+    margin-bottom: 1.5%;
+}
+.section-title{
+    width: 20%;
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 2%;
+    
+}
+.section-title::after{
     content: "";
     position: absolute;
-    width: 40%;
+    width: 50%;
     height: 10px;
     background: var(--accent);
-    bottom: 13px;
+    bottom:-25%;
     left: 0;
-    
-  
-    opacity: .9;
+    z-index: -1;
+    opacity: var(--opacity);
 }
 
-
-article[class^="experience"] {
-    width: 80%;
-    padding: 15px 0;
-    margin: 0 auto;
-    background-color: var(--primary);
-    padding: 5%;
-    outline: 3px solid var(--accent);
-    outline-offset: 8px;
-}
-h3[class^="experience"]{
-    color: --var(text);
-    font-size: 1.5rem;
-    margin: 1% 0;
-    font-weight: 700;
-}
-h4[class^="experience"]{
-    color: var(--text);
-    font-size: 1rem;
-    margin: 1% 0;
-    font-weight: 600;
+.job-tutor{
+    margin-top:8%;
+    padding: 3%;
+    width: 70%;
+    box-shadow: -10px 5px 16px var(--secondary);
+    float: right;
 }
 
-p[class^="experience"] {
-    color: var(--text);
-    position: relative;
-    z-index: 1;
-    font-size: 1.25rem;
-    width: 80%;
-    margin: 1.5%;
+.eagle-wrapper{
+    margin-top:8%;
+    margin-bottom: 5%;
+    padding: 3%;
+    width: 70%;
+    box-shadow: 5px 10px 16px var(--accent);
+    float: left;
 }
+
