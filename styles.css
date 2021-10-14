@@ -242,7 +242,7 @@ a.nav-list-link:focus::after {
     content: "";
     position: absolute;
     width: 35%;
-    height: 5px;
+    height: 8px;
     background: var(--accent);
     bottom: -25%;
     left: 0;
@@ -298,4 +298,10 @@ a.nav-list-link:focus::after {
     padding:5%;
     min-height: 100vh;
     
+}
+.bingo-wrapper{
+    width: 60%;
+}
+.pic{
+    margin:5%;
 }
