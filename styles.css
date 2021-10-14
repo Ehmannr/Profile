@@ -67,7 +67,10 @@ h3{
     font-size: 1rem;
 }
 
-
+.green-gradient{
+    background-image: linear-gradient(
+        170deg,#87d0ac 40% ,#ac87d0);
+}
 
 
 /* ~~~~~~~~~~~~~~~~~~~ */
@@ -144,8 +147,7 @@ a.nav-list-link:focus::after {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     
     .intro-wrapper{
-        background-image: linear-gradient(
-            170deg,#87d0ac 40% ,#ac87d0);
+       
         padding: 5% 0 0 0;
         
         height: 100vh;
@@ -227,14 +229,26 @@ a.nav-list-link:focus::after {
 /*           Experience              */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .experience-wrapper{
-    min-height: 100vh;
     padding :5%;
+    min-height: 100vh;
 }
-.job-etown{
-    margin-top:8%;
-    padding: 3%;
-    width: 70%;
-    box-shadow: 5px 10px 16px var(--accent);
+.section-title{
+    width: 20%;
+    font-size: 3rem;
+    margin-bottom: 2%;
+    
+}
+.section-title::after{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 5px;
+    background: var(--accent);
+    bottom: -25%;
+    left: 0;
+    
+    z-index: -1;
+    opacity: .9;
 }
 .exp-place{
     margin-bottom: .5%;
@@ -243,39 +257,45 @@ a.nav-list-link:focus::after {
     padding-left:2%;
     margin-bottom: 1.5%;
 }
-.section-title{
-    width: 20%;
-    display: block;
-    font-size: 3rem;
-    margin-bottom: 2%;
+
+.job-etown{
+   
     
-}
-.section-title::after{
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 10px;
-    background: var(--accent);
-    bottom:-25%;
-    left: 0;
-    z-index: -1;
-    opacity: var(--opacity);
-}
-
-.job-tutor{
-    margin-top:8%;
-    padding: 3%;
-    width: 70%;
-    box-shadow: -10px 5px 16px var(--secondary);
-    float: right;
-}
-
-.eagle-wrapper{
-    margin-top:8%;
-    margin-bottom: 5%;
     padding: 3%;
     width: 70%;
     box-shadow: 5px 10px 16px var(--accent);
-    float: left;
+}
+.job-tutor{
+    display:block;
+    padding: 3%;
+    width: 70%;
+    box-shadow: -10px 5px 16px var(--secondary);
+    margin-left:25%;
+    
 }
 
+.job-eagle{
+    display:block;
+    padding: 3%;
+    width: 70%;
+    box-shadow: 5px 10px 16px var(--accent);
+    margin-bottom:5%;
+    
+}
+.article-wrapper{
+    width: 100%;
+    margin-top: 8%;
+
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*              Projects             */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.project-wrapper{
+  
+    padding:5%;
+    min-height: 100vh;
+    
+}
