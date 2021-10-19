@@ -320,7 +320,7 @@ a.nav-list-link:focus::after {
     position: relative;
     font-size: 1.65rem;
     margin:5%;
-    width: 50%;
+    width: 20%;
 }
 
 .vaulted-wrapper{
@@ -329,15 +329,17 @@ a.nav-list-link:focus::after {
     margin-left:40%;
     background:var(--primary);
     padding:5%;
-    box-shadow: -10px 10px 20px var(--secondary);
+    box-shadow: -10px 10px 20px var(--accent);
 }
 .future-wrapper{
     width: 60%;
     margin:5%;
     background:var(--primary);
     padding:5%;
-    box-shadow: 10px 10px 15px var(--accent);
+    box-shadow: 10px 10px 15px var(--secondary);
 }
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*              Contact              */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
