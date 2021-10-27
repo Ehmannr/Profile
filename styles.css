@@ -322,14 +322,17 @@ a.nav-list-link:focus::after {
     margin:5%;
     width: 20%;
 }
-
+.indented{
+    margin-left: 2%;
+    margin-bottom :2%;
+}
 .vaulted-wrapper{
     width: 60%;
     margin:5%;
     margin-left:40%;
     background:var(--primary);
     padding:5%;
-    box-shadow: -10px 10px 20px var(--accent);
+    box-shadow: -10px 10px 20px var(--secondary);
 }
 .future-wrapper{
     width: 60%;
@@ -345,7 +348,23 @@ a.nav-list-link:focus::after {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .contact-wrapper{
   
-    padding:5%;
-    min-height: 60vh;
+    padding:5% 10% 10% 5% ;
+  
     
+}
+.contact-phone{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-email{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: bold;
 }
