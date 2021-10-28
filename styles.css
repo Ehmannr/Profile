@@ -80,6 +80,7 @@ h3{
 
 
 .nav-wrapper {
+    
     display: flex;
     height: 100px;
     flex-direction: row;
@@ -91,6 +92,7 @@ h3{
 }
 
 [class^="nav-wrapper"] {
+    
     list-style-type: none;
     font-size: 1.4rem;
 }
@@ -245,18 +247,7 @@ a.nav-list-link:focus::after {
     background-repeat: no-repeat;
     background-color: var(--primary);
 }
-.section-title::after{
-    content: "";
-    position: absolute;
-    width: 35%;
-    height: 8px;
-    background: var(--accent);
-    bottom: -15%;
-    left: 0;
-    
-    z-index: -1;
-    opacity: .9;
-}
+
 .exp-place{
     margin-bottom: .5%;
 }
@@ -353,12 +344,13 @@ a.nav-list-link:focus::after {
 /*              Contact              */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .contact-wrapper{
-  
+   
     padding:5% 10% 10% 5% ;
   
     
 }
 .contact-phone{
+    color: var(--text);
     width: 90%;
     margin: 0 auto;
     display: block;
@@ -367,10 +359,15 @@ a.nav-list-link:focus::after {
     font-weight: bold;
 }
 .contact-email{
+    color: var(--text);
     width: 90%;
     margin: 0 auto;
     display: block;
     font-size: 1.25rem;
     text-decoration: none;
     font-weight: bold;
+}
+.fab{
+    text-decoration: none;
+    color:var(--text)
 }
