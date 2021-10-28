@@ -1,2 +1,2 @@
 # Profile
-This is my resume
+This is for my website
