@@ -239,6 +239,12 @@ a.nav-list-link:focus::after {
     margin-bottom: 2%;
     
 }
+.new-bg{
+    margin: top 50%;
+    background-image: url(pngegg.jpeg);
+    background-repeat: no-repeat;
+    background-color: var(--primary);
+}
 .section-title::after{
     content: "";
     position: absolute;
